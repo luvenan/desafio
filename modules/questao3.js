@@ -48,16 +48,16 @@ function procurarPares(palavra){
             }
         }
     }
-    // console.log(count);
-    return count;
+    console.log(count);
 }
 
-procurarPares('baba');
+// procurarPares('baba');
 
-const count = procurarPares('baba');
-console.log(count);
-
-
+// const count = procurarPares('baba');
+// console.log(count);
 
 
 
+
+//Exporta as funções para o app.js
+exports.procurarPares = procurarPares;

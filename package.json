@@ -1,0 +1,25 @@
+{
+  "name": "desafio-capgemini",
+  "version": "1.0.0",
+  "description": "Desafio capgemini",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luvenan/desafio.git"
+  },
+  "author": "Luisa Venancio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luvenan/desafio/issues"
+  },
+  "homepage": "https://github.com/luvenan/desafio#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
