@@ -33,25 +33,5 @@ function validarSenha(senha) {
     }
 }
 
-//Senhas testes
-
-/*//Senha curta
-validarSenha("a2C@");
-//Senha sem letra minúscula
-validarSenha('ERQEDV3%');
-//Senha sem letra maiúscula
-validarSenha('qeiruqo1&');
-//Senhas sem caracteres especiais
-validarSenha('41u34ihQE');
-//Senhas seguras
-validarSenha('QEereq1&');
-validarSenha('abcd12EF*');
-validarSenha('senhA2$%');
-validarSenha('senhA2+(0)');
-
-//senhas com vários erros
-validarSenha('qoru3');
-validarSenha('ek');*/
-
 //Exporta a funnção para o app.js
 exports.validarSenha = validarSenha;

@@ -12,16 +12,14 @@ function encontrarSubstrings(palavra) {
             arrSubstrings.push(palavra.substring(i, j));
         }
     }
+    // console.log(arrSubstrings);
     return arrSubstrings;
 }
-
-// const test1 = encontrarSubstrings('baba');
-// console.log(test1);
 
 //Verifica se uma string é anagrama de outra
 function verificarAnagrama(a, b) {
     if(a.length !== b.length){
-       return
+       return false;
     }
     let str1 = a.split('').sort().join('');
     let str2 = b.split('').sort().join('');
@@ -32,13 +30,10 @@ function verificarAnagrama(a, b) {
     }
  }
 
-//  checkStringsAnagram("indian","ndiani")
-// encontreAnagramas('palavra');
-// encontreAnagramas('ovo');
-
 //Procurar pares de anagramas
 function procurarPares(palavra){
     const arrSubstrings = encontrarSubstrings(palavra);
+    // console.log(arrSubstrings)
     let count = 0;
     for (let i = 0; i < arrSubstrings.length; i++) {
         for (let j = 0; j < arrSubstrings.length; j++) {
@@ -48,16 +43,11 @@ function procurarPares(palavra){
             }
         }
     }
-    console.log(count);
+    console.log(count)
+    return count;
 }
 
-// procurarPares('baba');
-
-// const count = procurarPares('baba');
-// console.log(count);
-
-
-
-
 //Exporta as funções para o app.js
+exports.encontrarSubstrings = encontrarSubstrings;
+exports.verificarAnagrama = verificarAnagrama;
 exports.procurarPares = procurarPares;
