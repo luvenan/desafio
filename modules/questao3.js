@@ -1,4 +1,4 @@
-//Passos:
+//Passos usados para solucionar essa questão:
 //1. Criar array com todas as substrings
 //2. Crirar função que confere se uma string e anagrama de outra
 //3. Usar um nested loop pra iterar cada string do array e ver se é anagrama de outra, usando a função acima como callback e o array como argumento. Cada vez que for, a contagem de anagram pairs aumenta em um. Imprimir a contagem de anagram pairs. 
